@@ -3,9 +3,12 @@
                     (or (buffer-file-name) load-file-name)))
 (setq user-specific-dir (concat dotfiles-dir user-login-name))
 (add-to-list 'load-path (concat user-specific-dir "/color-theme"))
-(require 'color-theme)
+(add-to-list 'load-path (concat user-specific-dir "/color-theme-solarized"))
 (setq color-theme-is-global t)
+(require 'color-theme)
+(require 'color-theme-solarized)
 (color-theme-initialize)
+; (color-theme-solarized-dark)
 (color-theme-dark-blue2)
 
 (defun compile-load-withns ()
