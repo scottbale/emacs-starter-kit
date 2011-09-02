@@ -8,8 +8,8 @@
 (require 'color-theme)
 (require 'color-theme-solarized)
 (color-theme-initialize)
-; (color-theme-solarized-dark)
-(color-theme-dark-blue2)
+(color-theme-solarized-dark)
+; (color-theme-dark-blue2)
 
 (defun compile-load-withns ()
   "Compiles the clj file, loads it into the repl switches the current namespace of the repl to the one the file is in and then switches to the slime repl buffer"
@@ -20,3 +20,6 @@
 
 (add-hook 'clojure-mode-hook (lambda ()(define-key clojure-mode-map "\C-cd" 'compile-load-withns)))
 
+(global-set-key (kbd "<C-tab>") 'other-window)
+(global-set-key (kbd "<C-S-f>") 'rgrep)
+(global-set-key (kbd "<C-S-n>") 'locate)
