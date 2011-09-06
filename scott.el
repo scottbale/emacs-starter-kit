@@ -21,5 +21,5 @@
 (add-hook 'clojure-mode-hook (lambda ()(define-key clojure-mode-map "\C-cd" 'compile-load-withns)))
 
 (global-set-key (kbd "<C-tab>") 'other-window)
-(global-set-key (kbd "<C-S-f>") 'rgrep)
-(global-set-key (kbd "<C-S-n>") 'locate)
+(global-set-key (kbd "C-S-f") 'rgrep)
+(global-set-key (kbd "C-S-n") 'locate)
