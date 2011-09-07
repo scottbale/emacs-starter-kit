@@ -23,3 +23,6 @@
 (global-set-key (kbd "<C-tab>") 'other-window)
 (global-set-key (kbd "C-S-f") 'rgrep)
 (global-set-key (kbd "C-S-n") 'locate)
+;; Duplicate line
+(global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
+
